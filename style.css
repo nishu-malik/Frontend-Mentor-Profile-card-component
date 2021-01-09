@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+  background-image: url(images/bg-pattern-bottom.svg),
+    url(images/bg-pattern-top.svg);
+  background-repeat: no-repeat;
+  background-position: 700px 450px, -200px -400px;
+  background-color: hsl(185, 75%, 39%);
+  margin: auto;
+  font-family: "Kumbh Sans", sans-serif;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.card-container {
+  position: relative;
+  border-radius: 25px;
+  width: 350px;
+  background-color: white;
+}
+.header {
+  background-image: url(./images/bg-pattern-card.svg);
+  height: 150px;
+  width: inherit;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+}
+.img-container {
+  display: inline-block;
+
+}
+.img-container img {
+  border: 5px solid white;
+  border-radius: 100%;
+  margin-top: -53px;
+  margin-left: 124.7px;;
+}
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.info h3{
+    margin:5px 0px 10px 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    color: rgb(48, 46, 46);
+}
+.info h3 span{
+    margin-left: 10px;
+    color: hsl(0, 0%, 59%);
+    font-weight: lighter;
+}
+.info p{
+    margin: 0px 0px 30px 120px;
+    text-align: center;
+    color: hsl(0, 0%, 59%);
+    font-weight: lighter;
+}
+hr{
+    opacity: 0.3;
+    color: hsl(0deg 0% 81%)
+}
+.data{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 30px 0px;
+}
+.followers, .likes, .photos{
+    text-align: center;
+}
+.followers p,.likes p,.photos p{
+    color: hsl(0, 0%, 59%);
+    font-size: 12px;
+}
+.followers h3,.likes h3,.photos h3{
+    color: rgb(48, 46, 46);
+}
